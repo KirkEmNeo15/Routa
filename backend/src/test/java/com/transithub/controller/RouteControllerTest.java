@@ -24,7 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
- * Sends fake HTTP requests to the controllers (no real server needed) and checks the
+ * Sends fake HTTP requests to the controllers and checks the
  * status code and JSON. Needs the database with the sample data. Rolled back after each test.
  */
 @SpringBootTest
