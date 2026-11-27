@@ -1,4 +1,4 @@
--- =====================================================================
+-- ========================================================================
 -- Migration 001: remove the SHUTTLE and TRAIN transportation types.
 -- Run this ONCE on a database that was created before this change.
 -- (A brand-new database made from schema.sql + sample-data.sql does not need it.)
@@ -11,7 +11,7 @@
 --   4. stops with an error if any other shuttle/train row still exists
 --   5. removes the shuttle/train columns and tightens the type check
 -- Everything runs in one transaction: if something fails, nothing is changed.
--- =====================================================================
+-- ========================================================================
 BEGIN;
 
 -- 1) the shuttle route becomes a jeepney route (jeepney fare: 13.00 base, 0.85 per km)
