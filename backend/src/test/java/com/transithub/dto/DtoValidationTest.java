@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Checks the Bean Validation rules on the request DTOs (no Spring, no database).
- * These rules run in the controller, before any service is called.
+ * These rules run in the controller, before any services is called.
  */
 class DtoValidationTest {
 
