@@ -1,4 +1,4 @@
-# Road alignment tool
+# Road alignment tools
 
 The demo data stores each route line as a few points between stops, so the lines on the map are
 straight segments. `snap-routes-to-roads.mjs` replaces them with lines that follow real roads
