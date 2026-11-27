@@ -1,16 +1,3 @@
--- =====================================================================
--- Routa database schema (PostgreSQL)
---
--- This script is safe to run more than once (IF NOT EXISTS).
--- Money uses NUMERIC (exact decimals), never floating point.
--- Coordinates use DOUBLE PRECISION and are range-checked.
--- =====================================================================
-
--- ---------------------------------------------------------------------
--- USERS
--- role is a simple column: USER or ADMIN (no separate roles table needed)
--- password_hash stores a BCrypt hash, never the real password
--- ---------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS users (
     id              BIGSERIAL PRIMARY KEY,
     full_name       VARCHAR(100)  NOT NULL CHECK (btrim(full_name) <> ''),
